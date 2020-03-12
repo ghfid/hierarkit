@@ -28,21 +28,25 @@
                         <option>David Park</option>
                         <option>Elena Frost</option>
                     </select>
-                    <label class="tn-userInfo">Director Email</label>
+                    <label class="tn-userInfo" for="drEmail">Director Email</label>
                     <input type="text" id="drEmail">
                 </div>
+                <div class="userInfo-label">
+                    <input type="checkbox" name="checkDirector" id="ignoreDirectorCheckBox">
+                    <label for="checkDirector">Check if you are sending the request directly to Vice President.</label>
+                </div>
+
                 <div class="userInfo-label">
                     <label class="tn-userInfo">Vice President</label>
                     <select id="vpInfoSelectBox" name="VP">
                         <option selected="selected">Select...</option>
-                        <legend></legend>
                         <option>Killian Murphy</option>
                         <option>Boyd FUller</option>
                         <option>John Cena</option>
                         <option>Linkin Park</option>
                         <option>Faye Fran</option>
                     </select>
-                    <label class="tn-userInfo">VP Email</label>
+                    <label class="tn-userInfo" for="vpEmail">VP Email</label>
                     <input type="text" id="vpEmail">
                 </div>   
             </fieldset>
@@ -51,10 +55,8 @@
             <fieldset class="tn-fieldSet">
                 <legend>User Information</legend>
                 <div class="userInfo-label"> 
-                    <!-- <div style="float: left;">           -->
                     <label class="tn-userInfo">Contractor Company Name</label>
                     <input type="text"/>
-                        <!-- </div> -->
                     <label class="tn-userInfo">TriNorth Hiring Manager Name</label>
                     <input type="text"/>
 
@@ -79,6 +81,17 @@
                 </div>
             </fieldset>
         </div>
+
+        <fieldset class="tn-fieldSet">
+            <legend>Additional Software Request</legend>
+            <div>
+                <input type="checkbox" id="nodejsCheck">NodeJs
+                <input type="checkbox" id="photoShopCheck">PhotoShop
+                <input type="checkbox" id="compareItCheck">compareIt
+                <input type="checkbox" id="notepadCheck">notepad++
+                <input type="checkbox" id="vsCodeCheck">Visual Studio Code
+            </div>
+        </fieldset>
     </form>
   </body>
 </html>
