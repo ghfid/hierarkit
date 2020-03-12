@@ -1,1 +1,9 @@
 /* To be filled */
+
+.userInfo-label {
+    float: left;
+}
+
+input, label {
+    display: block;
+}

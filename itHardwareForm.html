@@ -3,56 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Hardware Request</title>
+    <title>Software Request form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
     <div class="tn-logo">
         <img src="image/trinorthLogo.png" width="30%"/>
     </div>
-    <div class="tn-itle">
-        <p class="tn-title-detial"><b>IT Hardware Request</b></p>
+    <div class="tn-main-title">
+        <p class="tn-title-detail"><b>Software Request form</b></p>
     </div>
     
-    <form>
+    <form name="softwareRequestForm" method="POST">
         <div class="dr-info">
             <fieldset class="tn-fieldSet">
                 <legend>Director Information</legend>
-                <label>Director</label>
-                <select id="diInfoSelectBox" name="directors" >
-                    <option>Aaron Kyle</option>
-                    <option>Bob Boyd</option>
-                    <option>Cena Jones</option>
-                    <option>David Park</option>
-                    <option>Elena Frost</option>
-                </select>
-                <select id="vpInfoSelectBox" name="VP" >
-                    <legend></legend>
-                    <option>Aaron Kyle</option>
-                    <option>Bob Boyd</option>
-                    <option>Cena Jones</option>
-                    <option>David Park</option>
-                    <option>Elena Frost</option>
-                </select>
+                <div class="userInfo-label"> 
+                    <label class="tn-userInfo">Director</label>
+                    <select id="diInfoSelectBox" name="directors" >
+                        <option selected="selected">Select...</option>
+                        <option>Aaron Kyle</option>
+                        <option>Bob Boyd</option>
+                        <option>Cena Jones</option>
+                        <option>David Park</option>
+                        <option>Elena Frost</option>
+                    </select>
+                    <label class="tn-userInfo">Director Email</label>
+                    <input type="text" id="drEmail">
+                </div>
+                <div class="userInfo-label">
+                    <label class="tn-userInfo">Vice President</label>
+                    <select id="vpInfoSelectBox" name="VP">
+                        <option selected="selected">Select...</option>
+                        <legend></legend>
+                        <option>Killian Murphy</option>
+                        <option>Boyd FUller</option>
+                        <option>John Cena</option>
+                        <option>Linkin Park</option>
+                        <option>Faye Fran</option>
+                    </select>
+                    <label class="tn-userInfo">VP Email</label>
+                    <input type="text" id="vpEmail">
+                </div>   
             </fieldset>
         </div>
         <div class="user-info">
             <fieldset class="tn-fieldSet">
                 <legend>User Information</legend>
-                
-                <label class="tn-userInfo">Contractor Company Name</label>
-                <input type="text"/>
+                <div class="userInfo-label"> 
+                    <!-- <div style="float: left;">           -->
+                    <label class="tn-userInfo">Contractor Company Name</label>
+                    <input type="text"/>
+                        <!-- </div> -->
+                    <label class="tn-userInfo">TriNorth Hiring Manager Name</label>
+                    <input type="text"/>
 
-                
-                <label class="tn-userInfo">TriNorth Hiring Manager Name</label>
-                <input type="text"/>
-
-                
-                <label class="tn-userInfo" >Cont </labe>
-                <input type="text"/>
-
-             
-                <label class="tn-userInfo"></label>
-                <input type="text"/>
+                    <label class="tn-userInfo" >TriNorth Cost Department </labe>
+                    <input type="text"/>
+                </div>
+                <div class="userInfo-label"> 
+                    <label class="tn-userInfo">Contractor Name</label>
+                    <input type="text"/>
+                    <label class="tn-userInfo">Contractor TriNorth Work Email</label>
+                    <input type="text"/>
+                    <label class="tn-userInfo">Phone Number</label>
+                    <input type="text"/>
+                </div>
+                <div class="userInfo-label">
+                    <label class="tn-userInfo">Job Code</label>
+                    <input type="text"/>
+                    <label class="tn-userInfo">Department Code</label>
+                    <input type="text"/>
+                    <label class="tn-userInfo">Date required by</label>
+                    <input type="date"/>
+                </div>
             </fieldset>
         </div>
     </form>
