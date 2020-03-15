@@ -28,6 +28,8 @@
                         <option>David Park</option>
                         <option>Elena Frost</option>
                     </select>
+                </div>
+                <div>
                     <label class="tn-userInfo" for="drEmail">Director Email</label>
                     <input type="text" id="drEmail">
                 </div>
@@ -46,6 +48,8 @@
                         <option>Linkin Park</option>
                         <option>Faye Fran</option>
                     </select>
+                </div>
+                <div>
                     <label class="tn-userInfo" for="vpEmail">VP Email</label>
                     <input type="text" id="vpEmail">
                 </div>   
@@ -81,17 +85,36 @@
                 </div>
             </fieldset>
         </div>
+        <div>
+            <fieldset class="tn-fieldSet">
+                <legend>Additional Software Request</legend>
+                <div style="display: inline-block;">
+                    <input type="checkbox" id="nodejsCheck">NodeJs
+                    <input type="checkbox" id="photoShopCheck">PhotoShop
+                    <input type="checkbox" id="compareItCheck">compareIt
+                    <input type="checkbox" id="notepadCheck">notepad++
+                    <input type="checkbox" id="vsCodeCheck">Visual Studio Coded
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset class="tn-fieldSet">
+                <legend>Rental Request</legend>
+                <div>
+                    <input type="checkbox" id="laptop"> laptop
+                    <input type="checkbox" id="smartphone">Smart Phone
+                    <input type="checkbox" id="rentalCar"> Car 
 
-        <fieldset class="tn-fieldSet">
-            <legend>Additional Software Request</legend>
-            <div>
-                <input type="checkbox" id="nodejsCheck">NodeJs
-                <input type="checkbox" id="photoShopCheck">PhotoShop
-                <input type="checkbox" id="compareItCheck">compareIt
-                <input type="checkbox" id="notepadCheck">notepad++
-                <input type="checkbox" id="vsCodeCheck">Visual Studio Code
-            </div>
-        </fieldset>
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset class="tn-fieldSet">
+                <legend>Justification</legend>
+                <textarea id="justifi" row="10" col="50"> 
+                </textarea>
+            </fieldset>
+        </div>
     </form>
   </body>
 </html>

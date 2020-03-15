@@ -1,14 +1,12 @@
 /* To be filled */
 
-.userInfo-label {
+/* .userInfo-label {
     float: left;
     padding-left: 10px;
 }
+*/
 
 input, label {
     display: inline-block;
 }
 
-td {
-    display: block;
-}
