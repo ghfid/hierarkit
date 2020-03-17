@@ -1,0 +1,20 @@
+#headerLogo {
+    display: block;
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+nav {
+    background-color: rgba(0, 32, 91, 0.9);
+    color:white;
+}
+
+/* nav 의 자손노드인 ul  */
+nav ul {
+    list-style: none;
+    text-align: center;
+
+}
